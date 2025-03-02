@@ -1,0 +1,1274 @@
+body {
+  /* padding-left: 260px; */
+  padding-right: 100px;
+  padding-top: 50px;
+  height: 8500px;
+}
+
+.uber-btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.uber-btn:hover {
+  opacity: 0.7;
+}
+
+.amazon-btn {
+  background-color: rgb(255, 216, 20);
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.amazon-btn:hover {
+  background-color: rgb(237, 187, 5);
+}
+
+.amazon-btn:active {
+  opacity: 0.7;
+}
+
+.github-btn {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  width: 85px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.github-btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bootstrap-btn {
+  background-color: rgb(121, 82, 179);
+  color: white;
+  width: 120px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.bootstrap-btn:hover {
+  background-color: rgb(90, 49, 151);
+}
+
+.download-btn {
+  background-color: white;
+  color: rgb(108, 117, 125);
+  width: 120px;
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(108, 117, 125);
+  margin-right: 40px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.download-btn:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+
+.linkedin-btn {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  width: 250px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 6px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.linkedin-btn:hover {
+  background-color: rgb(4, 79, 154);
+}
+
+.save-btn {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  width: 65px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(10, 102, 194);
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.save-btn:hover {
+  background-color: rgb(215, 235, 255);
+  border-width: 2px;
+}
+
+.amazon-link {
+  color: rgb(0, 113, 133);
+  transition: all 200ms;
+}
+
+.amazon-link:hover {
+  color: rgb(225, 138, 8);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(0, 118, 0);
+  font-weight: bold;
+}
+
+.buy-btn {
+  background-color: rgb(255, 164, 28);
+  color: rgb(0, 0, 0);
+  width: 150px;
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.buy-btn:hover {
+  background-color: rgb(224, 135, 3);
+}
+
+.buy-btn:active {
+  opacity: 0.7;
+}
+
+.back-btn {
+  margin-right: 5px;
+}
+
+.next-btn {
+  margin: 0 5px;
+}
+
+.pages {
+  margin-right: 5px;
+}
+
+.stretch-btn,
+.shadow-btn,
+.number-btn {
+  background-color: green;
+  padding: 10px;
+  margin: 0 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.stretch-btn:hover {
+  padding: 30px;
+}
+
+.shadow-btn:active {
+  margin: 5px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+.number-btn:hover {
+  padding: 10px 16px;
+  margin: 0;
+}
+
+.tahoma-text {
+  font-family: "Tahoma";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.deals-text {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.deal-deadline {
+  font-family: Arial;
+  font-style: italic;
+  color: red;
+  font-size: 16px;
+  margin: 7px;
+}
+
+.verdana-heading {
+  font-family: Verdana;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+
+.verdana-sub-heading {
+  font-family: Verdana;
+  font-size: 16px;
+  color: grey;
+  margin: 5px 0;
+}
+
+.verdana-desc {
+  font-family: Verdana;
+  font-size: 16px;
+  /* width: 300px; */
+}
+
+.verdana-btn {
+  font-family: Verdana;
+  background-color: rgb(5, 107, 5);
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.arial-heading {
+  font-family: Arial;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 0;
+}
+
+.arial-desc {
+  font-family: Arial;
+  text-align: center;
+  font-size: 16px;
+}
+
+.learn-link {
+  font-family: Arial;
+  color: rgb(47, 47, 255);
+  text-align: center;
+  cursor: pointer;
+}
+
+.macBook {
+  font-family: Arial;
+  text-align: center;
+}
+
+.macBook .heading {
+  color: orange;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.macBook .title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 5px 0 0 0;
+}
+
+.macBook .big-text {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 5px 0 0 0;
+}
+
+.macBook .price {
+  font-size: 18px;
+  color: grey;
+}
+
+.macBook .buy {
+  background-color: rgb(56, 56, 255);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.codeCamp {
+  font-family: Arial;
+}
+
+.codeCamp .heading {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.codeCamp .sub-heading {
+  color: grey;
+  font-weight: 500;
+}
+
+.codeCamp .desc {
+  font-size: 16px;
+  /* width: 400px; */
+}
+
+.codeCamp .desc2 {
+  font-size: 16px;
+  /* width: 400px; */
+}
+
+.codeCamp .desc2-span {
+  color: rgb(46, 46, 254);
+}
+
+.currency-exchange {
+  font-family: Arial;
+}
+
+.currency-exchange .main-price {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+}
+
+.currency-exchange .main-price-currency {
+  font-weight: 400;
+  color: grey;
+  font-size: 20px;
+  margin: 0 0 0 4px;
+}
+
+.currency-exchange .today-rate {
+  color: rgb(7, 235, 159);
+  font-size: 22px;
+  margin: 5px 0 0 0;
+}
+
+.currency-exchange .hourly-rate {
+  color: grey;
+  font-size: 22px;
+  margin: 5px 0 0 0;
+}
+
+.currency-exchange .hourly-rate-loss {
+  color: red;
+  margin-left: 4px;
+}
+
+.model {
+  font-family: "Montserrat";
+}
+
+.model .heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.model .desc {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px 0 0 0;
+}
+
+.model .desc-span {
+  text-decoration: underline;
+}
+
+.cat1 {
+  width: 200px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.cat2 {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 5px;
+}
+
+.cat3 {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.search-box {
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.google-search {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.15);
+}
+
+.form label {
+  color: grey;
+  font-size: 16px;
+}
+
+.form .email-input {
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 4px;
+  width: 200px;
+  padding: 8px;
+}
+
+.form p {
+  font-size: 16px;
+}
+
+.join-btn {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  font-size: 18px;
+  padding: 14px 0;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+}
+
+.twitter-text {
+  width: 260px;
+  background-color: white;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.twitter-text .cat {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.twitter-text input {
+  border: none;
+  outline: none;
+}
+
+.twitter-text button {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.name-box {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.inline-text {
+  display: inline-block;
+  width: 250px;
+}
+
+.name-input {
+  display: inline-block;
+  width: 100px;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.email-input {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(200, 200, 200);
+  width: 224px;
+}
+
+.sign-up-btn {
+  width: 244px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
+
+.request-text {
+  font-family: Arial;
+  font-size: 32px;
+  margin-bottom: 7px;
+}
+
+.uber-input {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 4px;
+  width: 250px;
+  background-color: rgb(229, 229, 229);
+  border: none;
+}
+
+.request-btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 10px 10px 0 0;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.schedule-btn {
+  background-color: rgb(229, 229, 229);
+  color: black;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.red-square {
+  width: 80px;
+  height: 80px;
+  background-color: red;
+
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.green-circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.review {
+  width: 300px;
+  border: 1px solid rgb(200, 200, 200);
+  padding: 12px;
+}
+
+.install-youtube {
+  width: 400px;
+  padding: 12px;
+  background-color: rgb(53, 53, 53);
+  font-family: Arial;
+  margin: 15px 0;
+}
+
+.install-youtube .heading {
+  font-size: 22px;
+  color: white;
+}
+
+.install-youtube .desc {
+  font-size: 16px;
+  color: rgb(200, 200, 200);
+  width: 370px;
+}
+
+.cat-card {
+  width: 200px;
+  /* border-radius: 2px; */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  margin: 15px 5px;
+  font-family: Arial;
+  display: inline-block;
+}
+
+.cat-card .cart-card-pic {
+  width: 100%;
+}
+
+.cat-card .card-title {
+  margin: 7px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cat-card .mutual {
+  margin: 0;
+  color: rgb(177, 177, 177);
+  margin-left: 7px;
+}
+
+.cat-card .add-friend-btn {
+  border: none;
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  margin: 7px;
+}
+
+.google {
+  display: block;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.google .google-pic {
+  width: 300px;
+}
+
+.google .google-search {
+  padding: 10px 15px;
+  width: 500px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  display: block;
+  box-shadow: 3px 3px 20px rgb(0, 0, 0, 0.15);
+  margin: 15px 0;
+}
+
+.puppy {
+  display: inline-block;
+}
+
+.mutual-block {
+  display: inline-block;
+}
+
+.puppy-pic {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.name {
+  margin: 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mutual-friends-row {
+  margin: 0 8px;
+}
+
+.mutual-friend-picture {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.mutual-friends {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(100, 100, 100);
+}
+
+.add-friend-button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 0 10px 8px;
+  cursor: pointer;
+}
+
+.grid-11a {
+  display: grid;
+  grid-template-columns: 200px 75px;
+  margin: 10px 0;
+}
+
+.grid-11b {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 50px 1fr 75px;
+}
+
+.grid-11c {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 20px;
+}
+
+/* .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.profile-info {
+  width: 200px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.15);
+  font-family: Arial;
+  margin: 15px 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+}
+
+.flex-container .number {
+  background-color: rgb(49, 109, 245);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: blueviolet;
+  border-radius: 2px;
+  color: white;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-bar .search-box {
+  flex: 1;
+  max-width: 500px;
+  /* padding: 10px 15px; */
+  margin: 0 30px;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.nav-bar .download-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(200, 200, 200);
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.profile-container {
+  width: 340px;
+  padding: 8px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.15);
+  font-family: Arial;
+  margin: 15px 0;
+}
+
+.profile-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pic {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info {
+  width: 200px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0 0 3px 0;
+}
+
+.handle {
+  color: rgb(150, 150, 150);
+  margin: 0 0 3px 0;
+}
+
+.category {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  margin: 0 0 3px 0;
+}
+
+.profile-flex .add-friend-btn {
+  border: none;
+  background-color: rgb(48, 144, 239);
+  color: white;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.flex-container-1 {
+  display: flex;
+  margin: 10px 0;
+}
+
+.item-1 {
+  width: 100px;
+  height: 50px;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-2 {
+  background-color: lightblue;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  /* align-items: center; */
+}
+
+.gmail-inbox {
+  width: 365px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(232, 232, 232);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gmail-inbox .heading {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.gmail-flex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0;
+}
+
+.cat-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.gmail-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+/* .gmail-text p {
+  margin: 0;
+} */
+
+.gmail-text-heading {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 17px;
+  margin: 0 0 6px 0;
+}
+
+.gmail-text-sub-heading {
+  color: rgb(150, 150, 150);
+  font-size: 13px;
+  margin: 0;
+}
+
+.tweet-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin: 30px 0 15px 0;
+  font-family: "Roboto", Arial;
+}
+
+.puppy-pic {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.tweet-text .heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.heading span {
+  color: rgb(150, 150, 150);
+  font-weight: 500;
+}
+
+.tweet-text .description {
+  font-size: 15px;
+  color: rgb(45, 45, 45);
+  font-weight: 500;
+  margin: 0;
+}
+
+.video-content {
+  width: 320px;
+  height: 85px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 12px;
+  margin: 0 0 0 60px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", Arial;
+}
+
+.video-content .empty {
+  background-color: rgb(196, 196, 196);
+  width: 60px;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-right: 10px;
+}
+
+.video-text .heading {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: rgb(150, 150, 150);
+  font-weight: 500;
+}
+
+.video-text .description {
+  font-size: 15px;
+  color: rgb(45, 45, 45);
+  font-weight: 500;
+  margin: 0;
+}
+
+.fixed-div {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background-color: black;
+  color: white;
+}
+
+.right-sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  top: 0;
+
+  background-color: green;
+  color: white;
+}
+
+/* .blackout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: black;
+} */
+
+.modal-overlay {
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 250px;
+  padding: 14px 20px;
+  font-family: "Roboto", Arial;
+  border-radius: 6px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+.modal-content .title {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.modal-content .description {
+  margin: 0 0 8px 0;
+}
+
+
+.facebook-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  height: 50px;
+  padding: 8px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.left-side .header-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.right-side .add-friend-btn {
+  border: none;
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.discord-sidebar {
+  font-family: Arial;
+  position: fixed;
+  top: 68px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(35, 35, 35);
+  padding: 20px 12px;
+ 
+}
+
+.sidebar-content {
+  background-color: rgb(55, 55, 55);
+  padding: 20px 12px;
+  width: 160px;
+}
+
+.content-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-flex .title {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.add-hastag {
+  color: rgb(158, 158, 158);
+  font-size: 30px;
+}
+
+.content-hastag {
+  color: rgb(158, 158, 158);
+}
+
+.close-container {
+  width: 300px;
+  height: 70px;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 6px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+.stick-box {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 300px;
+  height: 150px;
+  border-radius: 6px;
+  background-color: rgb(100, 100, 100);
+}
+
+.stick-box .close-btn {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  border: none;
+  width: 36px;
+  padding: 7px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+
+.stick-box .video-time {
+  font-family: "Roboto", Arial;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.sales {
+  position: relative;
+  display: inline-block;
+}
+
+.shirt-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sales .offer-percentage {
+  font-family: "Roboto", Arial;
+  background-color: black;
+  color: white;
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  right: 0;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.bottom-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-to-cart-button {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
