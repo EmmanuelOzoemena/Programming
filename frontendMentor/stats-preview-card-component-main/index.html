@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Google fonts link (Inter & Lexend Deca) -->
 
-  Get insights that help your business grow.
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="stats-card-container">
+        <div class="stats-card-details">
+          <h2>
+            Get <span class="span">insights</span> that help your business grow.
+          </h2>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="stats-card-count">
+            <div>
+              10k+ <br />
+              <span class="count-span">COMPANIES</span>
+            </div>
+            <div>
+              314 <br />
+              <span class="count-span">TEMPLATES</span>
+            </div>
+            <div>
+              12M+ <br />
+              <span class="count-span">QUERIES</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-card-image">
+          <img
+            src="./assets/images/image-header-desktop.jpg"
+            alt="hero-picture"
+            class="desktop-img"
+          />
+          <img
+            src="./assets/images/image-header-mobile.jpg"
+            alt="hero-picture"
+            class="mobile-img"
+          />
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >
+        Coded by
+        <a href="https://www.linkedin.com/in/emmanuelozo/">Emmanuel Ozoemena</a>
+      </div>
+    </main>
+  </body>
 </html>
