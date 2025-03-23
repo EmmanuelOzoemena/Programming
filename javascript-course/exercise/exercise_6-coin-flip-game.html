@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6 | Coin-flip Game</title>
+  </head>
+  <body>
+    <h2>Coin Flip Game</h2>
+
+    <button
+      onclick="
+        playGame('heads')
+      "
+    >
+      heads
+    </button>
+
+    <button
+      onclick="
+        playGame('tails')
+      "
+    >
+      tails
+    </button>
+
+    <button
+      onclick="
+        score.wins = 0
+        score.losses = 0
+        localStorage.removeItem('score')
+      "
+    >
+      Reset Score
+    </button>
+    <script>
+      /*
+      const randomNumber = Math.random();
+       console.log(randomNumber)
+
+      let result;
+
+      if (randomNumber < 1 / 2) {
+        result = "heads";
+      } else {
+        result = "tails";
+      }
+
+       let guess = 'heads'
+
+       if (guess === result) {
+        console.log('You win!')
+       } else {
+        console.log('You lose!')
+       }
+        */
+
+      //  Challenge - Using Tenary Operator
+
+      // let score = {
+      //   wins: 0,
+      //   losses: 0,
+      // };
+
+      let score = JSON.parse(localStorage.getItem("score")) || {
+        wins: 0,
+        losses: 0
+      }
+
+      function playGame(guess) {
+        const randomNumber = Math.random();
+
+        const result = randomNumber < 1 / 2 ? "heads" : "tails";
+
+        console.log(guess === result ? "You win!" : "You loss!");
+
+        if (guess === result) {
+          score.wins += 1;
+        } else {
+          score.losses += 1;
+        }
+
+        localStorage.setItem('score', JSON.stringify(score))
+
+        console.log(score);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model (DOM)</title>
+  </head>
+  <body>
+    <button>9a</button>
+    <button class="js-button">9b</button>
+
+    <br />
+    <br />
+
+    <button
+      onclick="
+        selectedButton('heads')
+      "
+    >
+      heads
+    </button>
+
+    <button
+      onclick="
+        selectedButton('tails')
+      "
+    >
+      tails
+    </button>
+
+    <p class="js-result"></p>
+
+    <input
+      type="text"
+      placeholder="Name"
+      class="text"
+      onkeydown="
+        handleNameKeydown(event)
+      "
+    />
+    <button
+      onclick="
+        displayName()
+      "
+    >
+      Submit
+    </button>
+    <p class="displayed-text"></p>
+
+    <input 
+      type="text" 
+      placeholder="Type something"
+      class="text-to-copy" 
+      onkeyup="handleUpdatedText(event)"
+    >
+    <p class="updated-text"></p>
+
+    <script>
+
+      function handleUpdatedText(event) {
+        const updatedText =  document.querySelector('.text-to-copy').value
+
+        if (event.key === event.key) {
+          document.querySelector('.updated-text').innerHTML = updatedText
+        }
+      }
+
+
+      function displayName() {
+        const inputText = document.querySelector(".text").value;
+
+        document.querySelector(
+          ".displayed-text"
+        ).innerHTML = `Your name is: ${inputText}`;
+      }
+
+      function handleNameKeydown(event) {
+        if (event.key === "Enter") {
+          displayName();
+        }
+      }
+
+      function selectedButton(choice) {
+        document.querySelector(".js-result").innerHTML = `You chose: ${choice}`;
+      }
+
+      /*
+      const elemnt = document.querySelector('button')
+      console.log(elemnt)
+
+      document.querySelector('.js-button').innerHTML = '9b done!'
+      */
+    </script>
+  </body>
+</html>
