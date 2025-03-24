@@ -407,7 +407,7 @@ body {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 80%;
+    max-width: 100%;
     flex-direction: column;
     margin: 20px auto;
     margin-bottom: 8px;
