@@ -15,6 +15,27 @@
   --slate-900: hsl(202, 55%, 16%);
 }
 
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/static/PlusJakartaSans-Medium.ttf') format('truetype');
+  font-weight: 500; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  src: url('assets/fonts/static/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans Variable';
+  src: url('assets/fonts/static/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   display: flex;
@@ -271,7 +292,6 @@ body {
   width: 100%;
   background-color: var(--slate-900);
 
-  padding: 20px 15px 0 15px;
   border-top-right-radius: 14px;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 14px;
@@ -281,14 +301,71 @@ body {
   font-size: 20px;
   color: var(--white);
   margin-bottom: 12px;
+  padding: 20px 25px 0 25px;
 }
 
 .result-container .hero-description {
-  width: 400px;
+  width: 370px;
   color: var(--slate-700);
+  padding: 0 15px 0 25px;
   font-size: 14px;
   line-height: 21px;
 }
+
+.result-container .result-box {
+  width: 87%;
+  margin: 24px 15px 0 25px;
+  border-radius: 6px;
+
+  background-color: hsl(198, 68%, 10%);;
+}
+
+.top-line {
+  width: 100%;
+  border-top: 2px solid var(--lime);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.monthly-repayment {
+  padding: 15px 20px;
+}
+
+.monthly-repayment-title {
+  font-size: 14px;
+  color: var(--slate-700);
+  margin-bottom: 8px;
+}
+
+.monthly-repayment-amount {
+  color: var(--lime);
+  font-size: 44px;
+  margin-bottom: 8px;
+}
+
+.middle-line {
+  margin: 0 20px 8px 20px;
+  border-bottom: 1px solid var(--slate-700);
+}
+
+.term-repayment {
+  padding: 15px 20px;
+}
+
+.term-repayment-title {
+  font-size: 14px;
+  color: var(--slate-700);
+  margin-bottom: 8px;
+}
+
+.term-repayment-amount {
+  color: var(--white);
+  font-size: 18px;
+}
+
+
+
+
 
 
 .attribution {
