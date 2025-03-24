@@ -16,22 +16,23 @@
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
-  src: url('assets/fonts/static/PlusJakartaSans-Medium.ttf') format('truetype');
-  font-weight: 500; 
+  font-family: "Plus Jakarta Sans";
+  src: url("assets/fonts/static/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans';
-  src: url('assets/fonts/static/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-family: "Plus Jakarta Sans";
+  src: url("assets/fonts/static/PlusJakartaSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans Variable';
-  src: url('assets/fonts/static/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+  font-family: "Plus Jakarta Sans Variable";
+  src: url("assets/fonts/static/PlusJakartaSans-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
@@ -143,7 +144,6 @@ body {
   font-weight: 700;
 }
 
-
 .mortgage-details {
   width: 100%;
   display: grid;
@@ -213,7 +213,6 @@ body {
 .mortgage-type .select-type:hover {
   border: 1px solid var(--lime);
 }
-
 
 .select-type div {
   color: var(--slate-900);
@@ -352,7 +351,7 @@ body {
   margin: 24px 15px 0 25px;
   border-radius: 6px;
 
-  background-color: hsl(198, 68%, 10%);;
+  background-color: hsl(198, 68%, 10%);
 }
 
 .top-line {
@@ -398,15 +397,78 @@ body {
   font-size: 18px;
 }
 
-
-
-
-
-
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 80%;
+    flex-direction: column;
+    margin: 20px auto;
+    margin-bottom: 8px;
+  }
+
+  .calculator-container .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .mortgage-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 18px;
+  }
+
+  .calculate-btn {
+    width: 100%;
+  }
+
+  .result-container {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 14px;
+  }
+
+  .result-container .heading-title {
+    padding: 20px 15px 0 20px;
+  }
+
+  .result-container .hero-description {
+    width: 230px;
+    font-size: 14px;
+    padding: 0 0 0 20px;
+    line-height: 20px;
+  }
+
+  .result-container .result-box {
+    margin: 24px 15px 20px 20px;
+  }
+
+  .monthly-repayment-title {
+    font-size: 12px;
+  }
+
+  .monthly-repayment-amount {
+    font-size: 32px;
+  }
+
+  .term-repayment-title {
+    font-size: 12px;
+  }
+
+  .term-repayment-amount {
+    font-size: 16px;
+  }
+
+  .attribution {
+    margin-bottom: 20px;
+  }
 }
