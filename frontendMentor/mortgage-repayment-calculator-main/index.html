@@ -22,36 +22,36 @@
         <div class="calculator-container">
           <div class="heading">
             <h2 class="title">Mortgage Calculator</h2>
-            <a href="#">Clear All</a>
+            <a href="#" onclick="resetFrom()">Clear All</a>
           </div>
 
-          <form action="">
+          <form class="form">
             <div class="mortgage-amount">
               <label for="mortgage-amount">Mortgage Amount</label>
-              <div class="input">
+              <div class="input"> 
                 <div>&#xA3;</div>
-                <input type="text" />
+                <input type="number" class="js-mortgage-amount" required />
               </div>
-              <p class="error-msg">This field is required</p>
+              <p class="error-msg-one"></p>
             </div>
 
             <div class="mortgage-details">
               <div>
                 <label for="mortgage-term">Mortgage Term</label>
                 <div class="input">
-                  <input type="text" />
+                  <input type="number" class="js-mortgage-years" required />
                   <div>years</div>
                 </div>
-                <p class="error-msg">This field is required</p>
+                <p class="error-msg-two"></p>
               </div>
 
               <div>
                 <label for="interest-rate">Interest Rate</label>
                 <div class="input">
-                  <input type="text" />
+                  <input type="number" class="js-mortgage-interest" required />
                   <div>%</div>
                 </div>
-                <p class="error-msg">This field is required</p>
+                <p class="error-msg-three"></p>
               </div>
             </div>
 
@@ -66,10 +66,14 @@
                 <input type="radio" />
                 <div>Interest Only</div>
               </div>
-              <p class="error-msg">This field is required</p>
+              <p class="error-msg"></p>
             </div>
 
-            <button class="calculate-btn" type="submit">
+            <button
+              class="calculate-btn"
+              type="submit"
+              onclick="calculateRepayment(event)"
+            >
               <img
                 class="calculate-icon"
                 src="./assets/images/icon-calculator.svg"
@@ -107,27 +111,27 @@
           <div class="result-box">
             <div class="top-line"></div>
             <div class="monthly-repayment">
-              <p class="monthly-repayment-title">
-                Your monthly repayments
-              </p>
+              <p class="monthly-repayment-title">Your monthly repayments</p>
 
               <h2 class="monthly-repayment-amount">
-                &#xA3;1,797.74
+                <!-- &#xA3;1,797.74 -->
+                &#xA3;0.00
               </h2>
             </div>
-            
-             <div class="middle-line"></div>
+
+            <div class="middle-line"></div>
 
             <div class="term-repayment">
-              <p class="term-repayment-title">Total you'll repay over the term</p>
+              <p class="term-repayment-title">
+                Total you'll repay over the term
+              </p>
 
               <h2 class="term-repayment-amount">
-                &#xA3;539,322.94
+                <!-- &#xA3;539,322.94 -->
+                &#xA3;0.00
               </h2>
             </div>
-           
           </div>
-
         </div>
       </div>
 
@@ -140,5 +144,7 @@
         <a href="https://www.linkedin.com/in/emmanuelozo/">Emmanuel Ozoemena</a>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

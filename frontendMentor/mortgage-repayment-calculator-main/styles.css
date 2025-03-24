@@ -89,7 +89,7 @@ body {
   color: var(--slate-700);
 }
 
-.calculator-container form {
+.calculator-container .form {
   padding: 20px;
 }
 
@@ -130,6 +130,7 @@ body {
   border-bottom-left-radius: 4px;
 }
 
+.input-error input,
 .input input {
   padding: 8px;
   width: 100%;
@@ -281,12 +282,46 @@ body {
   font-weight: 700;
 }
 
-.error-msg {
+/* error css starts here */
+
+.error-msg-one,
+.error-msg-two,
+.error-msg-three {
   font-size: 10px;
   margin: 2px 0;
   color: var(--red);
-  display: none;
+  /* display: none; */
 }
+
+.mortgage-amount .input-error,
+.mortgage-details .input-error {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--red);
+  border-radius: 4px;
+  transition: 150ms;
+}
+
+/* .mortgage-amount .input-error:hover {
+  border: 1px solid var(--slate-700);
+} */
+
+.mortgage-amount .input-error div,
+.mortgage-details .input-error div {
+  width: 30px;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+
+  background-color: var(--red);
+  color: var(--white);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* error ends */
 
 .result-container {
   width: 100%;
