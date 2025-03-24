@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calculator-container">
+          <div class="heading">
+            <h2 class="title">Mortgage Calculator</h2>
+            <a href="#">Clear All</a>
+          </div>
+
+          <form action="">
+            <div class="mortgage-amount">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <div class="input">
+                <div>&#xA3;</div>
+                <input type="text" />
+              </div>
+              <p class="error-msg">This field is required</p>
+            </div>
+
+            <div class="mortgage-details">
+              <div>
+                <label for="mortgage-term">Mortgage Term</label>
+                <div class="input">
+                  <input type="text" />
+                  <div>years</div>
+                </div>
+                <p class="error-msg">This field is required</p>
+              </div>
+
+              <div>
+                <label for="interest-rate">Interest Rate</label>
+                <div class="input">
+                  <input type="text" />
+                  <div>%</div>
+                </div>
+                <p class="error-msg">This field is required</p>
+              </div>
+            </div>
+
+            <div class="mortgage-type">
+              <label for="mortgage-type">Mortgage Type</label>
+              <div class="select-type">
+                <input type="radio" />
+                <div>Repayment</div>
+              </div>
+
+              <div class="select-type">
+                <input type="radio" />
+                <div>Interest Only</div>
+              </div>
+              <p class="error-msg">This field is required</p>
+            </div>
+
+            <button class="calculate-btn" type="submit">
+              <img
+                class="calculate-icon"
+                src="./assets/images/icon-calculator.svg"
+                alt="calculate-icon"
+              />
+              Calculate Repayment
+            </button>
+          </form>
+        </div>
+
+        <!-- <div class="result-container">
+          <img
+            class="illustration-empty"
+            src="./assets/images/illustration-empty.svg"
+            alt="illustration-empty"
+          />
+
+          <h2 class="result-title">Result shown here</h2>
+
+          <p class="result-description">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </p>
+        </div> -->
+
+        <div class="result-container">
+          <h2 class="heading-title">Your results</h2>
+
+          <p class="hero-description">
+            Your results are shown below based on the information you provided.
+            To adjust the results, edit the form and click “calculate
+            repayments” again.
+          </p>
+
+          <!-- <div class="result-box">
+            Your monthly repayments
+
+            Total you'll repay over the term
+          </div> -->
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >
+        Coded by
+        <a href="https://www.linkedin.com/in/emmanuelozo/">Emmanuel Ozoemena</a>
+      </div>
+    </main>
+  </body>
+</html>
