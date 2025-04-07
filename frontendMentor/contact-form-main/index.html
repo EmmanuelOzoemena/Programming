@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Contact form</title>
+  </head>
+  <body>
+    <main>
+      <div class="pop-up">
+        <div class="notification">
+          <img
+            class="icons"
+            src="./assets/images/icon-success-check.svg"
+            alt="icon-success-check"
+          />
+
+          <p class="notification-text">Message Sent!</p>
+        </div>
+
+        <p class="pop-up-desc">
+          Thanks for completing the form. We'll be in touch soon!
+        </p>
+      </div>
+
+      <div class="container">
+        <h2 class="container-title">Contact Us</h2>
+
+        <form action="">
+          <div class="grid-two">
+            <div class="input-group">
+              <label for="first-name">First Name <span>*</span></label>
+              <input type="text" class="first-name" required />
+              <small class="error-msg-one"></small>
+            </div>
+
+            <div class="input-group">
+              <label for="last-name">Last Name <span>*</span></label>
+              <input type="text" class="last-name" required />
+              <small class="error-msg-one"></small>
+            </div>
+          </div>
+
+          <div class="grid-one">
+            <div class="input-group">
+              <label for="first-name">Email Address <span>*</span></label>
+              <input type="email" class="email-address" required />
+              <small class="error-msg-one"></small>
+            </div>
+          </div>
+
+          <div class="query-type">
+            <label for="query-type">Query Type <span>*</span></label>
+          </div>
+
+          <div class="grid-two">
+            <div class="query-group">
+              <input type="radio" name="query" required />
+              <!-- <img
+                class="icons"
+                src="./assets/images/icon-radio-selected.svg"
+                alt="icon-radio-selected"
+              /> -->
+
+              <p class="query-text">General Enquiry</p>
+            </div>
+
+            <div class="query-group">
+              <input type="radio" name="query" required />
+
+              <!-- <img
+                class="icons"
+                src="./assets/images/icon-radio-selected.svg"
+                alt="icon-radio-selected"
+              /> -->
+
+              <p class="query-text">Support Request</p>
+            </div>
+
+            <small class="error-msg-four"></small>
+          </div>
+
+          <div class="grid-one">
+            <div class="input-group">
+              <label for="first-name">Message <span>*</span></label>
+              <textarea rows="6" class="message" required></textarea>
+              <small class="error-msg-two"></small>
+            </div>
+          </div>
+
+          <div>
+            <div class="consent">
+              <input type="checkbox" class="check-box" required />
+              <!-- <img
+                class="icons"
+                src="./assets/images/icon-checkbox-check.svg"
+                alt="icon-checkbox-check"
+              /> -->
+              <p class="consent-text">
+                I consent to being contacted by the team <span>*</span>
+              </p>
+            </div>
+
+            <small class="error-msg-three"></small>
+          </div>
+
+          <button class="submit-btn" type="submit" onclick="submitForm(event)">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >
+        Coded by
+        <a href="https://www.linkedin.com/in/emmanuelozo/">Emmanuel Ozoemena</a>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
