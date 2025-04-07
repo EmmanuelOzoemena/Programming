@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple-500: hsl(259, 100%, 65%);
+  --red-400: hsl(0, 100%, 67%);
+
+  --white: hsl(0, 100%, 100%);
+  --grey-100: hsl(0, 0%, 94%);
+  --grey-200: hsl(0, 0%, 86%);
+  --grey-500: hsl(0, 1%, 44%);
+  --black: hsl(0, 0%, 0%);
+}
+
+/* Regular */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Extra Bold */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Extra Bold Italic */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--grey-100);
+}
+
+.container {
+  width: 100%;
+  min-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--white);
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 128px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 24px 0 24px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  /* color: var(--red-400); */
+  color: var(--grey-500);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  width: 70px;
+  padding: 8px 10px;
+  outline: none;
+  /* border: 1px solid var(--red-400); */
+  border: 1px solid var(--grey-200);
+  border-radius: 6px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 700;
+
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-group input:hover {
+  border-color: var(--purple-500);
+}
+
+.submit-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.submit-container .left-line {
+  width: 72%;
+  border-bottom: 1px solid var(--grey-200);
+}
+
+.submit-container .right-line {
+  width: 50%;
+  border-bottom: 1px solid var(--grey-200);
+  display: none;
+}
+
+.submit-container img {
+  width: 30px;
+  object-fit: cover;
+}
+
+.submit-container button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  vertical-align: auto;
+  border: none;
+  background-color: var(--purple-500);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.submit-container button:hover {
+  background-color: var(--black);
+}
+
+.result-container {
+  width: 100%;
+  padding: 0 24px 24px 24px;
+}
+
+.result-text h1 {
+  font-style: italic;
+  font-size: 48px;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.result-text span {
+  color: var(--purple-500);
+}
+
+.error-msg {
+  font-size: 9px;
+  color: var(--red-400);
+  position: absolute;
+  /* bottom: 0; */
+
+  /* display: none; */
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .container {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .submit-container {
+    padding: 24px;
+  }
+
+  .submit-container .left-line,
+  .submit-container .right-line {
+    width: 36%;
+    display: block;
+  }
+
+  .submit-container img {
+    width: 25px;
+  }
+
+  .submit-container button {
+    width: 50px;
+    height: 50px;
+  }
+}
