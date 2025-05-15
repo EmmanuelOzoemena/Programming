@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="products">
+          <h2 class="title">Dessert</h2>
+
+          <div class="product-content"></div>
+        </div>
+
+        <div class="cart">
+          <div class="empty-cart">
+            <div class="empty-cart-title">
+              <p class="cart-quantity">Your Cart (0)</p>
+            </div>
+
+            <!-- <div class="empty-cart-image">
+              <img
+                src="./assets/images/illustration-empty-cart.svg"
+                alt="empty cart icon"
+              />
+
+              <p>Your added items will appear here</p>
+            </div> -->
+
+            <div class="cart-item">
+              <div class="selected-product">
+                <div class="selected-product-details">
+                  <p class="name">Classic Tiramisu</p>
+
+                  <div class="quantity-and-price">
+                    <p class="quantity">1x</p>
+                    <p class="price">@$5.50</p>
+                    <p class="quantity-price">$5.50</p>
+                  </div>
+                </div>
+
+                <button class="remove-item">
+                  <img
+                    src="./assets/images/icon-remove-item.svg"
+                    alt="remove-item-icon"
+                  />
+                </button>
+              </div>
+
+              <div class="selected-product">
+                <div class="selected-product-details">
+                  <p class="name">Classic Tiramisu</p>
+
+                  <div class="quantity-and-price">
+                    <p class="quantity">1x</p>
+                    <p class="price">@$5.50</p>
+                    <p class="quantity-price">$5.50</p>
+                  </div>
+                </div>
+
+                <button class="remove-item">
+                  <img
+                    src="./assets/images/icon-remove-item.svg"
+                    alt="remove-item-icon"
+                  />
+                </button>
+              </div>
+              
+              <div class="checkout">
+                <div class="total">
+                  <p class="total-title">Order Total</p>
+                  <p class="total-price">$46.50</p>
+                </div>
+
+                <div class="delivery-banner">
+                  <img
+                    src="./assets/images/icon-carbon-neutral.svg"
+                    alt="carbon-neutral-icon"
+                  />
+
+                  <p>This is a <span>carbon-neutral</span> delivery</p>
+                </div>
+
+                <button class="confirm-order-btn">Confirm Order</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/emmanuelozo/">Emmanuel Ozoemena</a
+        >.
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
