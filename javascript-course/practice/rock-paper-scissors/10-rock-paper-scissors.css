@@ -1,0 +1,52 @@
+body {
+  font-family: "Arial";
+  background-color: rgb(25, 25, 25);
+  color: white;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-button {
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.confirmation {
+  /* display: none; */
+}
+
+.reset-score-button,
+.auto-play-button, 
+.confirmation-button {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.confirmation-button {
+  margin-left: 10px;
+}

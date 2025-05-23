@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./calculator.css">
     <title>Calculator</title>
   </head>
   <body>
@@ -10,6 +11,7 @@
 
     <p>
       <button
+        class="number-btn"
         onclick="
         updateCalculation('1')
       "
@@ -18,6 +20,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('2')
       "
@@ -26,6 +29,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('3')
       "
@@ -34,6 +38,7 @@
       </button>
 
       <button
+        class="operator-btn"
         onclick="
         updateCalculation(' + ')
       "
@@ -44,6 +49,7 @@
 
     <p>
       <button
+        class="number-btn"
         onclick="
         updateCalculation('4')
       "
@@ -52,6 +58,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('5')
       "
@@ -60,6 +67,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('6')
       "
@@ -68,6 +76,7 @@
       </button>
 
       <button
+        class="operator-btn"
         onclick="
         updateCalculation(' - ')
       "
@@ -78,6 +87,7 @@
 
     <p>
       <button
+        class="number-btn"
         onclick="
         updateCalculation('7')
       "
@@ -86,6 +96,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('8')
       "
@@ -94,6 +105,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('9')
       "
@@ -102,6 +114,7 @@
       </button>
 
       <button
+        class="operator-btn"
         onclick="
         updateCalculation(' * ')
       "
@@ -112,6 +125,7 @@
 
     <p>
       <button
+        class="number-btn"
         onclick="
         updateCalculation('0')
       "
@@ -120,6 +134,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         updateCalculation('.')
       "
@@ -128,6 +143,7 @@
       </button>
 
       <button
+        class="number-btn"
         onclick="
         calculation = eval(calculation)
         displayCalculation()
@@ -138,6 +154,7 @@
       </button>
 
       <button
+        class="operator-btn"
         onclick="
        updateCalculation(' / ')
       "
@@ -147,7 +164,8 @@
     </p>
 
     <p>
-      <button
+      <button 
+        class="number-btn"
         onclick="
         calculation = '';
         displayCalculation()
@@ -161,20 +179,21 @@
     </p>
 
     <script>
-      let calculation = localStorage.getItem('calculation') || "";
+      let calculation = localStorage.getItem("calculation") || "";
 
       // displayCalculation()
 
       function updateCalculation(num) {
         calculation += num;
 
-        displayCalculation()
+        displayCalculation();
 
         localStorage.setItem("calculation", calculation);
       }
 
       function displayCalculation() {
-        document.querySelector('.displayed-calculation').innerHTML = calculation
+        document.querySelector(".displayed-calculation").innerHTML =
+          calculation;
       }
     </script>
   </body>
