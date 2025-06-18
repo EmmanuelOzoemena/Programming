@@ -475,24 +475,24 @@ const products = [
   {
     id: "id1",
     image: "images/products/backpack.jpg",
-    name: "School Backpack",
+    name: "Black School Backpack",
     rating: {
       stars: 4.5,
       count: 2045,
     },
     priceCents: 6999,
-    keywords: ["school", "bag", "backpack"],
+    keywords: ["school", "bag", "backpack", "black"],
   },
 
   {
     id: "id2",
     image: "images/products/umbrella.jpg",
-    name: "Umbrella",
+    name: "Large Green Umbrella",
     rating: {
       stars: 3.5,
       count: 1002,
     },
-    priceCents: 3939,
-    keywords: ["umbrella", "rain", "rain coat"],
+    priceCents: 3999,
+    keywords: ["umbrella", "rain", "green"],
   },
 ];
