@@ -14,6 +14,7 @@ import {
   getDeliveryOption,
 } from "../../data/deliveryOptions.js";
 import { renderPaymentSummary } from "./paymentSummary.js";
+import { renderCheckoutHeader } from "./checkoutHeader.js";
 
 
 export function renderOrderSummary() {
@@ -140,15 +141,17 @@ export function renderOrderSummary() {
       updateCartQuantity();
 
       renderPaymentSummary();
+
+      renderCheckoutHeader()
     });
   });
 
   function updateCartQuantity() {
     const cartQuantity = calculateCartQuantity();
 
-    document.querySelector(
-      ".js-return-to-home-link"
-    ).innerHTML = `${cartQuantity} items`;
+    // document.querySelector(
+    //   ".js-return-to-home-link"
+    // ).innerHTML = `${cartQuantity} items`;
   }
 
   updateCartQuantity();
@@ -186,6 +189,9 @@ export function renderOrderSummary() {
       quantityLabel.innerHTML = newQuantity;
 
       updateCartQuantity();
+
+      renderCheckoutHeader()
+      renderPaymentSummary()
     });
   });
 
