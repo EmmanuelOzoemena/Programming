@@ -12,7 +12,7 @@ async function loadPage() {
   try {
     // throw "error1";
 
-    Promise.all([loadProductsFetch(), loadCartFetch()]);
+   await Promise.all([loadProductsFetch(), loadCartFetch()]);
   } catch (error) {
     console.log("Unexpected error. Please try again later.");
   }
