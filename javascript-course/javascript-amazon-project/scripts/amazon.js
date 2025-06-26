@@ -29,7 +29,7 @@ function renderProductsGrid() {
       );
     });
   }
-  
+
   filteredProducts.forEach((product) => {
     productsHTML += `
     <div class="product-container">
@@ -91,6 +91,16 @@ function renderProductsGrid() {
     const search = document.querySelector(".js-search-bar").value;
 
     window.location.href = `amazon.html?search=${search}`;
+
+    // Extra feature: searching by pressing "Enter" on the keyboard.
+    document
+      .querySelector(".js-search-bar")
+      .addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          const searchTerm = document.querySelector(".js-search-bar").value;
+          window.location.href = `amazon.html?search=${searchTerm}`;
+        }
+      });
   });
 
   document.querySelector(".js-products-grid").innerHTML = productsHTML;
