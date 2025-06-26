@@ -63,10 +63,10 @@ export function addToCart(productId) {
     `.js-quantity-selector-${productId}`
   );
 
-  if (!quantitySelector) {
-    console.error(`Quantity selector for product ${productId} not found`);
-    return;
-  }
+  // if (!quantitySelector) {
+  //   console.error(`Quantity selector for product ${productId} not found`);
+  //   return;
+  // }
 
   const quantity = Number(quantitySelector.value);
 
