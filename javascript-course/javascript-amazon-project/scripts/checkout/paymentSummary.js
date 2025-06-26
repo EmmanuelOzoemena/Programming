@@ -1,4 +1,4 @@
-import { cart } from "../../data/cart.js";
+import { cart, resetCart } from "../../data/cart.js";
 import { getProduct } from "../../data/products.js";
 import { getDeliveryOption } from "../../data/deliveryOptions.js";
 import { formatCurrency } from "../utils/money.js";
@@ -92,3 +92,6 @@ export function renderPaymentSummary() {
       window.location.href = "orders.html";
     });
 }
+
+// Extra feature: make the cart empty after creating an order.
+resetCart();
